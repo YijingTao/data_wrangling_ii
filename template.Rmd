@@ -44,3 +44,17 @@ Here's skimr:
 skimr::skim(litters_df)
 ```
 
+
+##Arguments in 'read_csv'
+
+```{r}
+litters_df = 
+  read_csv(
+    "data/FAS_litters.csv",
+    skip = 5,
+    col_names = FALSE,
+    na = "Low8")
+litters_df
+```
+
+##parsing columns
